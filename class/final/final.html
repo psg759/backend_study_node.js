@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Final</title>
+    <link href="./final.css" rel="stylesheet">
+    <script src="./final.js"></script>
+</head>
+<body>
+   <div class="background">
+        <div class="wrapper">
+            <div class="wrapper__title">
+                코드캠프 회원가입
+            </div>
+            <div class="wrapper__input">
+                <div class="input">
+                    <input type="text" id="email" placeholder="  이메일을 입력해 주세요.">
+                    <div class="error" id="error__email"></div>
+                </div>
+                <div class="input">
+                    <input type="text" id="name" placeholder="  이름을 입력해 주세요.">
+                    <div class="error" id="error__name"></div>
+                </div>
+                <div class="input">
+                    <input type="password" id="pw1" placeholder="  비밀번호를 입력해 주세요.">
+                    <div class="error" id="error__pw1"></div>
+                </div>
+                <div class="input">
+                    <input type="password" id="pw2" placeholder="  비밀번호를 다시 입력해 주세요.">
+                    <div class="error" id="error__pw2"></div>
+                </div>
+            </div>
+            <div class="wrapper__phonenum">
+                <input type="text" id="phonenum1" oninput="move_cursor1()"> ㅡ
+                <input type="text" id="phonenum2" oninput="move_cursor2()"> ㅡ
+                <input type="text" id="phonenum3" oninput="check_phonenum()"> 
+            </div>
+            <div class="wrapper__authnum">
+                <span id="authnum">000000</span>
+                <button id="send_authnum" disabled="true" onclick="make_authnum()">인증번호 전송</button>
+            </div>
+            <div class="wrapper__check__authnum">
+                <span id="left_time">3:00</span>
+                <button id="check_authnum" disabled="true" onclick="pass_authnum()">인증확인</button>
+            </div>
+            <div class="wrapper__location">
+                <select id="location">
+                    <option  selected="true" disabled="true">  지역을 선택하세요</option>
+                    <option value="서울">서울</option>
+                    <option value="인천">인천</option>
+                    <option value="경기">경기</option>
+                </select>
+            </div>
+            <div class="error" id="error__location"></div>
+            <div class="wrapper__gender">
+                <div class="gender">
+                    <input type="radio" id="gender__w"> 여성
+                </div>
+                <div class="gender">
+                    <input type="radio" id="gender__m"> 남성
+                </div>
+            </div>
+            <div class="error" id="error__gender"></div>
+
+            <div class="wrapper__divideline"></div>
+            
+            <button class="wrapper__submit" id="submit" disabled="true" onclick="check_wrapper()">가입하기</button>
+            
+        </div>
+   </div>
+    
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
     <title>Game</title>
     <link href="./styles/game.css" rel="stylesheet"> 
+    <script src="./game.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -24,7 +25,7 @@
             <div class="game__subtitle">제시어 : <span id="word">코드캠프</span></div>
             <div class="word__text">
                 <input class="textbox" id="myword" placeholder="단어를 입력하세요.">
-                <button class="search">입력</button>
+                <button class="search" onclick="word_compare()">검색</button>
             </div>
             <div id="result" class="word__result">결과!</div>
         </div>
@@ -32,15 +33,15 @@
             <img src="./images/lotto.png">
             <div class="game__title">LOTTO</div>
             <div class="game__subtitle">버튼을 누르세요.</div>
-            <div class="numbers">
-                <div class="num"><span id="num">3</span></div>
-                <div class="num"><span id="num">5</span></div>
-                <div class="num"><span id="num">10</span></div>
-                <div class="num"><span id="num">24</span></div>
-                <div class="num"><span id="num">30</span></div>
-                <div class="num"><span id="num">34</span></div>
+            <div class="game__lotto__numbers">
+                <div class="game__lotto__num"><span id="num">3</span></div>
+                <div class="game__lotto__num"><span id="num">5</span></div>
+                <div class="game__lotto__num"><span id="num">10</span></div>
+                <div class="game__lotto__num"><span id="num">24</span></div>
+                <div class="game__lotto__num"><span id="num">30</span></div>
+                <div class="game__lotto__num"><span id="num">34</span></div>
             </div>
-            <button class="num__result">Button</button>
+            <button class="game__lotto__button">추첨</button>
         </div>
 
     </div>

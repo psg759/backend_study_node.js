@@ -102,24 +102,26 @@ html, body {
     background-color: white;
 }
 
-.numbers {
+.game__lotto__numbers {
     width: 130px;
     height: 21px;
-    border: 1px solid;
+    border: 1px solid black;
     border-radius: 8px;
     background-color: #ffe400;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 11px;
 }
 
-.num {
+.game__lotto__num {
     font-size: 10px;
     font-weight: 700;
 }
 
-.num__result {
+.game__lotto__button {
     width: 62px;
     height: 24px;
     border-radius: 5px;
